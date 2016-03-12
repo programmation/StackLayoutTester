@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StackLayoutTester.ButtonsPage">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="t1" Text="Fix" Activated="OnExpand" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout BackgroundColor="#E3E3E3" Padding="5" VerticalOptions="Fill">
+			<Button x:Name="b1" BackgroundColor="#3A23E3" TextColor="White" Text="Start" VerticalOptions="StartAndExpand" />
+			<Button x:Name="b2" BackgroundColor="#3A23E3" TextColor="White" Text="Center" VerticalOptions="CenterAndExpand" />
+			<Button x:Name="b3" BackgroundColor="#3A23E3" TextColor="White" Text="End" VerticalOptions="EndAndExpand" />
+			<!--
+			<Button Text="Fill" VerticalOptions="Fill" />
+			-->
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

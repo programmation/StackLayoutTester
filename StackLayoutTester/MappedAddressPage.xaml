@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="StackLayoutTester.MappedAddressPage">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="t1" Text="Fix" Activated="OnExpand" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout x:Name="sl0" BackgroundColor="Olive" Padding="5" Spacing="0" VerticalOptions="Fill">
+			<StackLayout x:Name="slb" BackgroundColor="Lime" Padding="5" VerticalOptions="FillAndExpand">
+				<BoxView x:Name="b1" BackgroundColor="Green" VerticalOptions="Fill" />
+			</StackLayout>
+			<!--
+			<StackLayout x:Name="sl4" BackgroundColor="Fuchsia" VerticalOptions="FillAndExpand" />
+			-->
+			<StackLayout x:Name="sl1" BackgroundColor="Blue" Padding="5" VerticalOptions="FillAndExpand">
+				<Entry x:Name="e1" Placeholder="Street1" VerticalOptions="StartAndExpand" />
+				<Entry x:Name="e2" Placeholder="Street2" VerticalOptions="StartAndExpand" />
+				<Entry x:Name="e3" Placeholder="City" VerticalOptions="StartAndExpand" />
+				<StackLayout x:Name="sl2" Orientation="Horizontal" VerticalOptions="StartAndExpand">
+					<Entry x:Name="e4" Placeholder="State" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+					<Entry x:Name="e5" Placeholder="ZipCode" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+				<StackLayout x:Name="sl3" Orientation="Horizontal" VerticalOptions="StartAndExpand">
+					<Entry x:Name="e6" Placeholder="Latitude" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+					<Entry x:Name="e7" Placeholder="Longitude" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
